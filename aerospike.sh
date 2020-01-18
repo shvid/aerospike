@@ -20,4 +20,4 @@ else
    exit
 fi
 
-docker run $FLAG --rm -v "$BIN:/opt/aerospike" --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike asd --foreground --config-file /opt/aerospike/etc/aerospike.conf
+docker run $FLAG --rm -v "$BIN:/opt/aerospike" --name aerospike -p 3010:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike:4.5.2.6 asd --foreground --config-file /opt/aerospike/etc/aerospike.conf
